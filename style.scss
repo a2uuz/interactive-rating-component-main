@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+// VARIABLES
+$Orange: #fb7413;
+$White: #ffffff;
+$Light_Grey: #959eac;
+$Medium_Grey: #7c8798;
+$Dark_Blue: #252d37;
+$Very_Dark_Blue: #121417;
+$Fsize: 15px;
+$Ffamily: "Overpass", sans-serif;
+
+body {
+  background-color: $Very_Dark_Blue;
+  font-family: $Ffamily;
+  font-size: $Fsize;
+}
+main {
+  background-color: $Dark_Blue;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.rating {
+  img {
+    background-color: #1f2329b4;
+    border-radius: 2rem;
+    padding: 0.7rem;
+  }
+  h2 {
+    color: $White;
+  }
+  p {
+    line-height: 1.5rem;
+    font-weight: bold;
+    color: $Medium_Grey;
+  }
+  section {
+    display: flex;
+    justify-content: space-around;
+    color: $Medium_Grey;
+    font-weight: bold;
+    div {
+      background-color: #21262c;
+      border-radius: 2rem;
+      padding: 0.5rem;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  button {
+    width: 100%;
+    background-color: $Orange;
+    color: $White;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.8rem 1rem;
+  }
+}

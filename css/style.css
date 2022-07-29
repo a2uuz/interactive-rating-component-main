@@ -1,15 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   background-color: #121417;
   font-family: "Overpass", sans-serif;
   font-size: 15px;
 }
 
-main {
+.setup {
   background-color: #252d37;
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  padding: 1rem;
+  padding: 2rem;
   margin: 1rem;
 }
 
@@ -26,21 +31,30 @@ main {
   font-weight: bold;
   color: #7c8798;
 }
-.rating section {
+.rating .items {
   display: flex;
   justify-content: space-around;
   color: #7c8798;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
-.rating section div {
+.rating .items button {
   background-color: #21262c;
   border-radius: 2rem;
-  padding: 0.5rem;
-  width: 20px;
-  height: 20px;
+  padding: 1rem;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.rating .items button:hover {
+  background-color: #fb7413;
+  color: #ffffff;
+  cursor: pointer;
+}
+.rating .items button:focus {
+  background-color: #959eac;
 }
 .rating button {
   width: 100%;
@@ -49,4 +63,35 @@ main {
   border: none;
   border-radius: 2rem;
   padding: 0.8rem 1rem;
+}
+.rating button:hover {
+  background-color: #ffffff;
+  color: #fb7413;
+  cursor: pointer;
+}
+
+.thankState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.9rem;
+}
+.thankState span {
+  color: #fb7413;
+  background-color: #21262c;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+}
+.thankState section h2 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+.thankState section p {
+  color: #959eac;
+  line-height: 1.4rem;
+}
+
+aside {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
